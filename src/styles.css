@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;700&display=swap');
+
+body {
+  font-family: 'Exo 2', sans-serif;
+}
+
+
+body {
+  font-family: 'Exo 2', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #fef6e4, #fcd5ce, #fae1dd);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  /* color: #f4a261; Light orange font */
+}
+
+.header {
+  background-color: #ffffff;
+  color: #f4a261;
+  font-family: 'Exo 2', sans-serif;
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #f4a261;
+}
+
+.slogan {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #172c66;
+}
+
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo{
+  width: 150px;               /* adjust size as needed */
+  height: 150px;
+  border-radius: 50%;        /* makes it a circle */
+  border: 3px solid #f58220; /* white border */
+  object-fit: contain;         /* ensures image fits inside circle */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.company-logo{
+  width:500px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.header-right {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  background-color: #ffffff;
+  color: #f4a261;
+  border: 2px solid #f4a261;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #f4a261;
+  color: #ffffff;
+}
+
+.app {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  flex: 1;
+  gap: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.car-list {
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.car-card {
+  background: rgba(255, 255, 255, 0.1);        /* Transparent white */
+  backdrop-filter: blur(15px);                /* ✅ Makes background behind card blurry */
+  -webkit-backdrop-filter: blur(15px);        /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.2);  /* Thin white border */
+  border-radius: 16px;
+  padding: 1rem;
+  font-family: 'Exo 2', sans-serif;
+  color: #001858;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+
+.car-card:hover {
+  transform: scale(1.02);
+}
+
+.car-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: fill;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+}
+
+.cart {
+  background-color: #ffffff;
+  color: #f4a261;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  min-width: 250px;
+  max-width: 300px;
+  height: 300px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+  overflow-y: auto;
+  filter: brightness(0.6); /* ✨ Less bright initially */
+  transition: filter 0.3s ease, transform 0.3s ease; /* ✨ Smooth transitions */
+}
+
+.cart:hover {
+  filter: brightness(1); /* ✨ Full brightness on hover */
+  transform: scale(1.02); /* Optional: slightly zoom on hover */
+}
+
+.cart h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.cart ul {
+  padding-left: 1rem;
+}
+
+.cart form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cart input {
+  padding: 0.7rem;
+  border: 1px solid #f4a261;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #f4a261;
+  background-color: #ffffff;
+}
+
+.cart input::placeholder {
+  color: #f4a261;
+}
+
+
+
+.login-container,
+.checkout-step,
+.full-page {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, #ffffff, #fff4e6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.login-box,
+.checkout-box {
+  background: #ffffff;
+  padding: 2rem 3rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-box h2,
+.checkout-box h2 {
+  color: #f4a261;
+  margin-bottom: 1rem;
+}
+
+.login-box input,
+.checkout-box textarea,
+.checkout-box input[type="text"] {
+  padding: 1rem;
+  border: 1px solid #f4a261;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #f4a261;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.login-box input::placeholder,
+.checkout-box textarea::placeholder {
+  color: #f4a261;
+}
+
+.login-box button,
+.checkout-box button {
+  background-color: #ffffff;
+  color: #f4a261;
+  border: 2px solid #f4a261;
+  padding: 0.8rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.login-box button:hover,
+.checkout-box button:hover {
+  background-color: #f4a261;
+  color: #ffffff;
+}
+
+.checkout-box p {
+  color: #f4a261;
+  font-size: 1rem;
+}
+
+.checkout-box input[type="radio"] {
+  margin-right: 0.5rem;
+  accent-color: #f4a261;
+}
+
+.nav-buttons{
+background-color: #f4a261;
+}
+
+.home-btn{
+background-color: #f4a261;
+font-family: 'Exo 2', sans-serif;
+font-weight: 700;
+color: #fff4e6;
+}
+
+.car-details {
+  margin-top: 0.5rem;
+  background-color: #fff5ea;
+  color: #172c66;
+  padding: 0.8rem;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.book-btn, .details-btn, .clear-btn, .confirm-btn{
+  align-self: center;
+  background-color: #edae7b;
+  background-image: none;
+  margin-right: 10px;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.book-btn, .details-btn, .clear-btn, .confirm-btn{
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.book-btn, .details-btn, .clear-btn, .confirm-btn {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+/* Stylish fade-in animation for components */
+.fade-in {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.car-card {
+  background: #fef6e4;
+  color: #001858;
+  padding: 1rem;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.car-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+
+.checkout-box,
+.login-box {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #f58220;
+  box-shadow: 0 0 5px rgba(245, 130, 32, 0.4);
+  transition: 0.3s ease;
+}
+
+/* Address & Payment Page Styles */
+.full-page {
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: linear-gradient(135deg, #fef6e4, #fcd5ce, #fae1dd);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s ease-in-out;
+  color: #001858;
+}
+
+.full-page h2 {
+  color: #f58220;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.full-page form {
+  width: 100%;
+  max-width: 600px;
+  background-color: linear-gradient(135deg, #fef6e4, #fcd5ce, #fae1dd);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.full-page input[type="text"],
+.full-page input[type="radio"] {
+  padding: 12px;
+  border: 2px solid #f58220;
+  border-radius: 8px;
+  background-color: #fff6e4;
+  font-size: 1rem;
+}
+
+.full-page input[type="text"]:focus {
+  outline: none;
+  border-color: #f58220;
+  box-shadow: 0 0 6px rgba(245, 130, 32, 0.4);
+}
+
+.full-page label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+.full-page input[type="radio"] {
+  accent-color: #f58220;
+}
+
+.full-page button {
+  background-color: #f58220;
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.full-page button:hover {
+  background-color: #e76e15;
+  transform: translateY(-2px);
+}
+
+.about-us {
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #fef6e4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s ease-in-out;
+  color: #001858;
+}
+
+.about-us h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #ff6600;
+  text-align: center;
+}
+
+.about-us p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  text-align: justify;
+  padding-left: 140px;
+  padding-right: 150px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.footer {
+  background-color: white; /* Light orange variant */
+  color: #ff7b00;
+  text-align: center;
+  padding: 20px 10px;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 14px;
+  margin-top: 50px;
+  border-top: 1px solid #f0c090;
+}
+
+.drop-down{
+  border: white;
+  color: white;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 600;
+  background-color: #f4a261;
+  font-size: medium;
+}
+
+.car-list-container {
+  padding: 16px;
+}
+
+.filter-bar {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.search-input,
+.price-select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
