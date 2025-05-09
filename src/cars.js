@@ -9,6 +9,7 @@ const cars = [
     engine: "1.2L Kappa",
     description: "Compact premium hatchback with a smooth ride and sporty design.",
     image: "https://static.toiimg.com/thumb/imgsize-23456,msid-78782048,width-600,resizemode-4/hyundai-i20-n-front.jpg",
+    stock: 5,
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ const cars = [
     engine: "1.2L DualJet",
     description: "Popular hatchback with excellent fuel efficiency and low maintenance.",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTULdst3M5F5AGl09gIfqv_nWmo9xt4WmVI4A&s",
+    stock: 5,
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ const cars = [
     engine: "1.5L Revotorq",
     description: "Compact SUV with strong build quality and top-notch safety ratings.",
     image: "https://imgd.aeplcdn.com/664x374/n/cw/ec/141867/nexon-facelift-exterior-left-rear-three-quarter.jpeg?isig=0&q=80",
+    stock: 5,
   },
   {
     id: 4,
@@ -42,6 +45,7 @@ const cars = [
     engine: "1.5L Turbo GDi",
     description: "Premium sedan with luxurious interiors and advanced tech features.",
     image: "https://gaadiwaadi.com/wp-content/uploads/2023/05/2023-hyundai-verna-1.jpg",
+    stock: 5,
   },
   {
     id: 5,
@@ -52,7 +56,8 @@ const cars = [
     fuelType: "Petrol",
     engine: "1.0L TSI",
     description: "Stylish and modern sedan with European design and comfort.",
-    image: "https://images.autox.com/uploads/2024/09/Skoda-Slavia-Monte-Carlo-Edition.jpg",
+    image: "https://lh6.googleusercontent.com/proxy/AsSUMZlTTv1OrBeSvNik7HyHJh-eAyXkmRB-_FV1bg2wVKARj-blNIaCrTRyiKw6EHPLaKLD3XyS3Zsz1u9eky3FIuWDTJTxhlM",
+    stock: 5,
   },
   {
     id: 6,
@@ -64,6 +69,7 @@ const cars = [
     engine: "1.0L TSI",
     description: "Premium German sedan with responsive handling and elegant design.",
     image: "https://img.autocarindia.com/Galleries/20220308030907_Virtus_2022%20_1_.jpg",
+    stock: 5,
   },
   {
     id: 7,
@@ -75,6 +81,7 @@ const cars = [
     engine: "EV Motor",
     description: "Upcoming futuristic electric SUV with cutting-edge tech and bold styling.",
     image: "https://motoringworld.in/wp-content/uploads/2024/11/BE6E-258-scaled.jpg",
+    stock: 5,
   },
   {
     id: 8,
@@ -86,6 +93,7 @@ const cars = [
     engine: "2.2L mHawk",
     description: "Feature-loaded SUV with ADAS, panoramic sunroof and powerful performance.",
     image: "https://www.motorbeam.com/wp-content/uploads/Mahindra-XUV700-Blaze-Edition.jpg",
+    stock: 5,
   },
   {
     id: 9,
@@ -97,6 +105,7 @@ const cars = [
     engine: "1.4L Turbo GDi",
     description: "Trendy urban SUV with premium features and a refined drive experience.",
     image: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Kia/Seltos-2023/8709/1688465684023/front-left-side-47.jpg",
+    stock: 5,
   },
   {
     id: 10,
@@ -108,6 +117,7 @@ const cars = [
     engine: "2.8L GD",
     description: "Premium SUV known for rugged reliability, performance, and road presence.",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_2aQrnO7mzQKq2Mh1qClmies61YjlWOnFrw&s",
+    stock: 5,
   },
   {
     id: 11,
@@ -119,6 +129,7 @@ const cars = [
     engine: "1.5L i-VTEC",
     description: "Iconic mid-size sedan with refined engine and smooth driving dynamics.",
     image: "https://media.assettype.com/evoindia/2022-05/3d2693d5-6d85-4a47-a0fd-a1a1352b1579/Photo_27_04_22__8_01_15_PM.jpg",
+    stock: 5,
   },
   {
     id: 12,
@@ -130,6 +141,7 @@ const cars = [
     engine: "1.5L Turbo",
     description: "Connected SUV with voice commands, large infotainment screen and comfort.",
     image: "https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2019/06/hector-exteriors-4-770x433-1561623814.jpg",
+    stock: 5,
   },
   {
     id: 13,
@@ -141,6 +153,7 @@ const cars = [
     engine: "1.0L SCe",
     description: "Compact city hatchback with SUV-like styling and affordable pricing.",
     image: "https://upload.wikimedia.org/wikipedia/commons/7/77/2023_Renault_Kwid_Iconic_%28Colombia%29_front_view_01.png",
+    stock: 5,
   },
   {
     id: 14,
@@ -151,7 +164,8 @@ const cars = [
     yearsUsed: 3,
     engine: "1.5L Petrol",
     fuelType: "Petrol",
-    description: "Compact SUV with great mileage, perfect for city and long drives."
+    description: "Compact SUV with great mileage, perfect for city and long drives.",
+    stock: 5,
   },
   {
     id: 15,
@@ -162,7 +176,8 @@ const cars = [
     yearsUsed: 2,
     engine: "1.0L Turbo",
     fuelType: "Petrol",
-    description: "Stylish, affordable SUV with advanced safety features and great comfort."
+    description: "Stylish, affordable SUV with advanced safety features and great comfort.",
+    stock: 5,
   },
   {
     id: 16,
@@ -173,7 +188,8 @@ const cars = [
     yearsUsed: 4,
     engine: "1.5L Diesel",
     fuelType: "Diesel",
-    description: "Sturdy build, strong performance, ideal for rough terrains and long drives."
+    description: "Sturdy build, strong performance, ideal for rough terrains and long drives.",
+    stock: 5,
   },
   {
     id: 17,
@@ -185,6 +201,7 @@ const cars = [
     engine: "2.0L TFSI",
     description: "Luxury sedan with cutting-edge technology, plush interiors, and dynamic performance.",
     image: "https://spn-sta.spinny.com/blog/20230612165825/Audi-A6.webp?compress=true&quality=80&w=1024&dpr=2.6",
+    stock: 5,
   },
   {
     id: 18,
@@ -196,6 +213,7 @@ const cars = [
     engine: "3.0L Turbo",
     description: "Premium luxury SUV offering exceptional comfort, power, and technology.",
     image: "https://hips.hearstapps.com/hmg-prod/images/2024-bmw-x5-m60i-102-6602d48787fb7.jpg?crop=0.772xw:0.651xh;0.0897xw,0.171xh&resize=1200:*",
+    stock: 5,
   },
   {
     id: 19,
@@ -207,6 +225,7 @@ const cars = [
     engine: "2.0L Turbo",
     description: "Sophisticated sedan combining luxury, performance, and advanced tech features.",
     image: "https://www.topgear.com/sites/default/files/2021/11/Mercedes_C300D_0000.jpg",
+    stock: 5,
   },
   {
     id: 20,
@@ -218,6 +237,7 @@ const cars = [
     engine: "3.3L Twin-Turbo V6",
     description: "Legendary off-road vehicle with exceptional reliability and power.",
     image: "https://acko-cms.ackoassets.com/Toyota_Land_Cruiser_4192ce25f5.png",
+    stock: 5,
   },
   {
     id: 21,
@@ -229,6 +249,7 @@ const cars = [
     engine: "2.5L Hybrid",
     description: "Premium hybrid SUV offering a luxurious driving experience with eco-friendly performance.",
     image: "https://npr.brightspotcdn.com/9d/d6/9d97833e433a8ded3b326efa883d/lexus-rx-right-front.jpg",
+    stock: 5,
   },
   {
     id: 22,
@@ -240,6 +261,7 @@ const cars = [
     engine: "3.0L Turbo",
     description: "Iconic sports car with dynamic performance and timeless design.",
     image: "https://c.ndtvimg.com/2024-05/9j043eng_2025-porsche-911-carrera-gts-launched_625x300_30_May_24.jpg?im=FaceCrop,algorithm=dnn,width=1200,height=738",
+    stock: 5,
   }
 ];
 
